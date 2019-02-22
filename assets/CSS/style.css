@@ -1,0 +1,54 @@
+.box {
+    padding:20px;
+    background: #eee;
+    display: inline-block;
+    width: 100%;
+}
+
+.box .column {
+    width: 30%;
+    padding: 15px;
+    float: left;
+}
+
+.box .column .block {
+    padding: 15px;
+    background: #fff;
+}
+
+.box .column .block b {
+    display: none;
+}
+
+.box .column .block a {
+    float: right;
+}
+
+.mobile_menu_trigger {
+    display: none;
+}
+
+@media (max-width: 915px) {
+    .box .column {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .box .column .block h1 {
+        display: none;
+    }
+    .box .column .block b {
+        display: block;
+    }
+    .pc_menu {
+        display: none;
+    }
+    .mobile_menu_trigger {
+        display: block;
+    }
+    .hidden {
+        display: none;
+    }
+}
